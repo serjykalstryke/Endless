@@ -1,19 +1,31 @@
 import React from "react";
 import hero from "../images/photo-couch.jpg";
 
+import HeroText from "./HeroText";
+
 import "../index.css";
 
 const Hero = () => {
   return (
-    <main
+    <div
+      className="heroBox"
       style={{
-        background: `url(${hero}) no-repeat center center fixed`,
-        backgroundSize: "cover",
-        width: "100%",
+        width: "100vw",
         height: "100vh",
-        position: "relative",
       }}
-    ></main>
+    >
+      <main
+        style={{
+          background: `url(${hero}) no-repeat center center fixed`,
+          backgroundSize: "cover",
+          width: "100%",
+          height: "100%",
+          position: "relative",
+        }}
+      >
+        <HeroText />
+      </main>
+    </div>
   );
 };
 
