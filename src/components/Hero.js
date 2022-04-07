@@ -3,7 +3,7 @@ import hero from "../images/photo-couch.jpg";
 
 import "../index.css";
 
-const Main = () => {
+const Hero = () => {
   return (
     <main
       style={{
@@ -17,4 +17,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Hero;
