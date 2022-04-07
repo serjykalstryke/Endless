@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+/* font-family: 'Lato', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: rgb(61, 59, 59);
+  padding: 7px;
+}
+
+.logo {
+  width: 100px;
+  filter: invert(87%) sepia(21%) saturate(7478%) hue-rotate(115deg)
+    brightness(102%) contrast(95%);
+  margin-left: 10rem;
+}
