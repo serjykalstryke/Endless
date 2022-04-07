@@ -19,3 +19,9 @@
     brightness(102%) contrast(95%);
   margin-left: 10rem;
 }
+
+.img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
