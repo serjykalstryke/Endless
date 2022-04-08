@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
 
+/* Styles entire page */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -46,6 +47,16 @@ p {
   font-weight: 500;
 }
 
+.heroText {
+  font-family: "Lato", sans-serif;
+  color: white;
+  position: absolute;
+  top: 22rem;
+  left: 13rem;
+}
+
+/* Button styling */
+
 .button {
   background-color: #65f5d2;
   display: inline-block;
@@ -77,58 +88,7 @@ p {
   background-color: #e95420;
 }
 
-.heroText {
-  font-family: "Lato", sans-serif;
-  color: white;
-  position: absolute;
-  top: 22rem;
-  left: 13rem;
-}
-
-@media only screen and (max-width: 920px) {
-  .paragraph {
-    width: 75%;
-  }
-
-  .logo {
-    margin-left: 5rem !important;
-  }
-
-  .heroText {
-    left: 6rem;
-  }
-
-  h4 {
-    font-size: 15px;
-  }
-
-  span {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .paragraph {
-    width: 100%;
-  }
-
-  .heroText {
-    left: 4rem;
-    top: 10rem;
-  }
-
-  .logo {
-    margin-left: 2rem !important;
-  }
-
-  h4 {
-    font-size: 15px;
-  }
-
-  span {
-    font-size: 30px;
-  }
-}
+/* styling for steps */
 
 .steps {
   margin-bottom: 100px;
@@ -183,4 +143,51 @@ p {
   margin-top: 0, 5rem;
   margin-bottom: 1rem;
   font-size: 15px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 920px) {
+  .paragraph {
+    width: 75%;
+  }
+
+  .logo {
+    margin-left: 5rem !important;
+  }
+
+  .heroText {
+    left: 6rem;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  span {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .paragraph {
+    width: 100%;
+  }
+
+  .heroText {
+    left: 4rem;
+    top: 10rem;
+  }
+
+  .logo {
+    margin-left: 2rem !important;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  span {
+    font-size: 30px;
+  }
 }
