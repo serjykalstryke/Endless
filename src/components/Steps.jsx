@@ -18,7 +18,7 @@ const Steps = () => {
           a.effectiveDate > b.effectiveDate ? a : b
         ),
       }));
-      //This section removes the extra data and puts all the needed data into one object.
+      //This section removes the extra data and puts all the needed data into one object that is saved in State
       const newSteps = extractUsefulDataFunction.map((step) => ({
         stepNumber: step.stepNumber,
         title: step.stepInfo.title,
@@ -33,6 +33,8 @@ const Steps = () => {
       setSteps(getDateFunction(sortedSteps));
     });
   }, []);
+
+  //in the return below, we map over the steps state object, and this takes in a step param and returns JSX with the step data
   return (
     <div className="steps">
       <h3 className="stepHeader">How it Works</h3>
