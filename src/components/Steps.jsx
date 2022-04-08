@@ -5,13 +5,13 @@ const Steps = () => {
   const [steps, setSteps] = useState([]);
   useEffect(() => {
     //This function maps over the steps and sorts them by stepNumber
-    const sortFunction = (steps) => {
+    const sortStepNumber = (steps) => {
       return steps.sort((a, b) =>
         parseInt(a.stepNumber > b.stepNumber ? 1 : -1)
       );
     };
     //this section maps over the steps that are passed to it and returns an object with the stepNumber and most recent versionContent
-    const getDateFunction = (steps) => {
+    const mapStepsByDate = (steps) => {
       const extractUsefulDataFunction = steps.map((step) => ({
         stepNumber: step.stepNumber,
         stepInfo: step.versionContent.reduce((a, b) =>
@@ -29,8 +29,8 @@ const Steps = () => {
     };
 
     getSteps().then((steps) => {
-      const sortedSteps = sortFunction(steps);
-      setSteps(getDateFunction(sortedSteps));
+      const sortedSteps = sortStepNumber(steps);
+      setSteps(mapStepsByDate(sortedSteps));
     });
   }, []);
 
