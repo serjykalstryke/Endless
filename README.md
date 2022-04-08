@@ -29,7 +29,6 @@ View the deployed application <a href = "https://young-lowlands-92384.herokuapp.
 
 **React** <br>
 **Custom REST API** <br>
-**Flexbox** <br>
 **Axios** <br>
 **Google Fonts**
 
