@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Steps renders as expected 1`] = `
+<div
+  className="steps"
+>
+  <h3
+    className="stepHeader"
+  >
+    How it Works
+  </h3>
+  <div
+    className="stepWrapper"
+    id="stepWrapper"
+  />
+</div>
+`;
+
+exports[`help 1`] = `
+<div
+  className="steps"
+>
+  <h3
+    className="stepHeader"
+  >
+    How it Works
+  </h3>
+  <div
+    className="stepWrapper"
+    id="stepWrapper"
+  />
+</div>
+`;
