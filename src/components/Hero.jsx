@@ -7,25 +7,17 @@ import "../index.css";
 
 const Hero = () => {
   return (
-    <div
-      className="heroBox"
+    <main
       style={{
-        width: "100vw",
+        background: `url(${hero}) no-repeat center center fixed`,
+        backgroundSize: "cover",
+        width: "100%",
         height: "100vh",
+        position: "relative",
       }}
     >
-      <main
-        style={{
-          background: `url(${hero}) no-repeat center center fixed`,
-          backgroundSize: "cover",
-          width: "100%",
-          height: "100%",
-          position: "relative",
-        }}
-      >
-        <HeroText />
-      </main>
-    </div>
+      <HeroText />
+    </main>
   );
 };
 

@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Lato", sans-serif;
 }
 
 .nav {
@@ -45,11 +46,36 @@ p {
   font-weight: 500;
 }
 
-/* .img {
-  display: block;
-  width: 100px;
-  height: 100px;
-} */
+.button {
+  background-color: #65f5d2;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 6px 27px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 100px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+  animation: moveFromBottom 1.25s ease-out;
+  animation-delay: 1.5s;
+  transition: background-color 0.2s ease;
+  animation-fill-mode: backwards;
+}
+
+.button:hover {
+  background-color: #12bb91;
+}
+
+.button:focus {
+  outline: none;
+  background-color: #e95420;
+}
+
+.button:active {
+  background-color: #e95420;
+}
 
 .heroText {
   font-family: "Lato", sans-serif;
@@ -57,4 +83,104 @@ p {
   position: absolute;
   top: 22rem;
   left: 13rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .paragraph {
+    width: 75%;
+  }
+
+  .logo {
+    margin-left: 5rem !important;
+  }
+
+  .heroText {
+    left: 6rem;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  span {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .paragraph {
+    width: 100%;
+  }
+
+  .heroText {
+    left: 4rem;
+    top: 10rem;
+  }
+
+  .logo {
+    margin-left: 2rem !important;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  span {
+    font-size: 30px;
+  }
+}
+
+.steps {
+  margin-bottom: 100px;
+}
+
+.stepHeader {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 2rem;
+  font-size: 29px;
+}
+
+.stepWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.stepContainer {
+  text-align: center;
+  width: 250px;
+  margin-right: 1rem;
+}
+
+.stepNumber {
+  position: relative;
+  font-size: 45px;
+}
+
+.stepNumber:before {
+  position: absolute;
+  bottom: -8px;
+  left: 105px;
+  width: 42px;
+  height: 2px;
+  content: "";
+  border-bottom: 3px solid #65f5d2;
+}
+
+.stepTitle {
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+
+.stepContent {
+  font-weight: 400;
+}
+
+.stepText {
+  font-weight: 300;
+  margin-top: 0, 5rem;
+  margin-bottom: 1rem;
+  font-size: 15px;
 }
