@@ -34,7 +34,7 @@ const Steps = () => {
     });
   }, []);
 
-  //in the return below, we map over the steps state object, and this takes in a step param and returns JSX with the step data
+  //in the return below, we map over the steps state object, and this takes in a step param and returns JSX with the sorted step data
   return (
     <div className="steps">
       <h3 className="stepHeader">How it Works</h3>

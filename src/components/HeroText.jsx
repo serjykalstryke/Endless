@@ -2,6 +2,7 @@ import React from "react";
 
 import Button from "./Button";
 
+//Added animation for a little flair
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 
