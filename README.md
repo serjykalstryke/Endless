@@ -3,7 +3,7 @@
 This was part of a programming challenge to build a landing page for a fictional company. The goal was to build out a project from scratch based on a starting image.
 A REST API was used to generate the "How It Works" section.
 
-img src = "public/endless.png" alt="screenshot of endless">
+<img src = "public/endless.png" alt="screenshot of endless">
 
 View the deployed application <a href = "https://young-lowlands-92384.herokuapp.com/">here</a>
 
