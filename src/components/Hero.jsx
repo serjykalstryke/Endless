@@ -13,8 +13,8 @@ const Hero = () => {
         style={{
           background: `url(${hero}) no-repeat center center`,
           backgroundSize: "cover",
+          display: "block",
           width: "100%",
-          height: "100vh",
           position: "relative",
           overflow: "visible",
           marginLeft: "auto",
