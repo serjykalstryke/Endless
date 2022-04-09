@@ -42,6 +42,11 @@ p {
   font-weight: 500;
 }
 
+.paragraph {
+  width: 40%;
+  line-height: 1.7;
+}
+
 .heroText {
   font-family: "Lato", sans-serif;
   color: white;
@@ -156,11 +161,16 @@ p {
   }
 
   h4 {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   span {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 15px;
+    margin-top: 10px;
   }
 }
 
@@ -185,6 +195,11 @@ p {
   span {
     font-size: 30px;
   }
+}
+
+.heroContainer {
+  width: 100vw;
+  height: 50rem;
 }
 
 .container {

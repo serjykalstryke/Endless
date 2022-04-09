@@ -7,17 +7,9 @@ import "../index.css";
 
 const Hero = () => {
   return (
-    <div className="container">
-      <main
-        className="hero"
-        style={{
-          background: `url(${hero}) no-repeat center center`,
-          backgroundSize: "cover",
-          width: "100%",
-          height: "100vh",
-          position: "relative",
-        }}
-      >
+    <div className="heroContainer">
+      <main className="hero">
+        <image src={hero} alt="" />
         <HeroText />
       </main>
     </div>
