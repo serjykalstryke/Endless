@@ -13,7 +13,7 @@ const HeroText = () => {
         animateIn="fadeIn"
         animateOnce={true}
         initiallyVisible={false}
-        duration={2}
+        duration={4}
       >
         <h4>New Games & Accessories</h4>
         <h1>

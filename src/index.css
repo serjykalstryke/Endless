@@ -145,6 +145,20 @@ p {
   font-size: 15px;
 }
 
+.container {
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.hero {
+  grid-area: 2 / 1 / 3 / 13;
+  height: 75rem;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 920px) {
@@ -158,7 +172,11 @@ p {
 
   .heroText {
     left: 6rem;
-    top: 5rem;
+    top: 10rem;
+  }
+
+  .hero {
+    height: 100vh;
   }
 
   h4 {
@@ -201,18 +219,4 @@ p {
 .heroContainer {
   width: 100vw;
   height: 50rem;
-}
-
-.container {
-  padding-bottom: 1rem;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(5, auto);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.hero {
-  grid-area: 2 / 1 / 3 / 13;
-  height: 100vh;
 }
