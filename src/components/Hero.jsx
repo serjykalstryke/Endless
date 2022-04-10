@@ -13,7 +13,6 @@ const Hero = () => {
         style={{
           background: `url(${hero}) no-repeat center center`,
           backgroundSize: "cover",
-          // display: "inline-block",
           width: "100%",
           position: "relative",
           overflow: "visible",
