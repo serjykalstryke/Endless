@@ -3,6 +3,7 @@ import { getSteps } from "../utils/API";
 
 const Steps = () => {
   const [steps, setSteps] = useState([]);
+  //useEffect hook is called every time the page is re-rendered, and in this case it is told to only render once so we don't generate an infinite loop
   useEffect(() => {
     //This function maps over the steps and sorts them by stepNumber
     const sortStepNumber = (steps) => {
@@ -10,16 +11,16 @@ const Steps = () => {
         parseInt(a.stepNumber > b.stepNumber ? 1 : -1)
       );
     };
-    //this section maps over the steps that are passed to it and returns an object with the stepNumber and most recent versionContent
+    //this section maps over the steps that are passed to it and returns an array of objects with the stepNumber and most recent versionContent
     const mapStepsByDate = (steps) => {
-      const extractUsefulDataFunction = steps.map((step) => ({
+      const mappedByDate = steps.map((step) => ({
         stepNumber: step.stepNumber,
         stepInfo: step.versionContent.reduce((a, b) =>
           a.effectiveDate > b.effectiveDate ? a : b
         ),
       }));
-      //This section removes the extra data and puts all the needed data into one object that is saved in State
-      const newSteps = extractUsefulDataFunction.map((step) => ({
+      //This section removes the extra data and puts all the needed data into one object that is saved as newSteps
+      const newSteps = mappedByDate.map((step) => ({
         stepNumber: step.stepNumber,
         title: step.stepInfo.title,
         body: step.stepInfo.body,
@@ -27,7 +28,7 @@ const Steps = () => {
 
       return newSteps;
     };
-
+    //This section calls the getSteps() function, and then executes a function that uses the above defined functions to set steps in State
     getSteps().then((steps) => {
       const sortedSteps = sortStepNumber(steps);
       setSteps(mapStepsByDate(sortedSteps));
