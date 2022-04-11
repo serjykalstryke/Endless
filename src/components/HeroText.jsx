@@ -13,7 +13,7 @@ const HeroText = () => {
         animateIn="fadeIn"
         animateOnce={true}
         initiallyVisible={false}
-        duration={2.5}
+        duration={3.5}
       >
         <h4>New Games & Accessories</h4>
 
@@ -34,7 +34,7 @@ const HeroText = () => {
         animateIn="bounceInLeft"
         animateOnce={true}
         initiallyVisible={false}
-        duration={1.7}
+        duration={1.3}
       >
         <Button />
       </ScrollAnimation>

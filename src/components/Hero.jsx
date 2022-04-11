@@ -6,11 +6,9 @@ import "../index.css";
 
 const Hero = () => {
   return (
-    <div className="container">
-      <main className="hero">
-        <HeroText />
-      </main>
-    </div>
+    <main className="hero">
+      <HeroText />
+    </main>
   );
 };
 
