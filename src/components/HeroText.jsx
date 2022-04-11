@@ -13,7 +13,7 @@ const HeroText = () => {
         animateIn="fadeIn"
         animateOnce={true}
         initiallyVisible={false}
-        duration={3.5}
+        duration={2.5}
       >
         <h4>New Games & Accessories</h4>
 
@@ -21,13 +21,7 @@ const HeroText = () => {
           <span>Monthly Packages.</span>
           <span>Excitement delivered daily.</span>
         </h1>
-      </ScrollAnimation>
-      <ScrollAnimation
-        animateIn="fadeIn"
-        animateOnce={true}
-        initiallyVisible={false}
-        duration={2.5}
-      >
+
         <section className="paragraph">
           <p>
             What's the best way to shop for the latest video games and
@@ -37,10 +31,9 @@ const HeroText = () => {
         </section>
       </ScrollAnimation>
       <ScrollAnimation
-        animateIn="bounceInUp"
+        animateIn="bounceInLeft"
         animateOnce={true}
         initiallyVisible={false}
-        delay={1}
         duration={1.7}
       >
         <Button />
