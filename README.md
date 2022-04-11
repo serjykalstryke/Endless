@@ -55,3 +55,6 @@ View the deployed application <a href = "https://young-lowlands-92384.herokuapp.
 If you have any further questions, feel free to reach out to me! <br>
 <a href='https://www.github.com/serjykalstryke'>Github</a> <br>
 <a href='mailto:davidstinnett@icloud.com'>davidstinnett@icloud.com</a>
+
+## License
+  GNU GENERAL PUBLIC LICENSE
