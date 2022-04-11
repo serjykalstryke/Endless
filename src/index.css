@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+/*Page level styles */
 * {
   box-sizing: border-box;
   font-family: Lato, sans-serif;
@@ -6,6 +8,9 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+
+/* Navbar styles */
+
 .nav {
   background-color: #222;
   padding: 7px;
@@ -16,6 +21,8 @@
   margin-left: 10rem;
   width: 100px;
 }
+
+/* Text Styles */
 .heroText,
 h4,
 span {
@@ -36,6 +43,19 @@ p {
   line-height: 1.7;
   width: 40%;
 }
+
+/* Background Image Styling */
+.hero {
+  background: url(images/photo-couch_2x.jpg) fixed;
+  background-size: cover;
+  height: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+  position: relative;
+  width: 100vw;
+}
+
 .heroText {
   color: #fff;
   font-family: Lato, sans-serif;
@@ -43,6 +63,8 @@ p {
   position: absolute;
   top: 22rem;
 }
+
+/* Button Styles */
 .button {
   background-color: #65f5d2;
   border-radius: 100px;
@@ -67,6 +89,8 @@ p {
 .button:focus {
   background-color: #e95420;
 }
+
+/* Steps  styles */
 .steps {
   margin-bottom: 100px;
 }
@@ -114,16 +138,8 @@ p {
   margin-top: 0, 5rem;
 }
 
-.hero {
-  background: url(images/photo-couch_2x.jpg) fixed;
-  background-size: cover;
-  height: 60rem;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: visible;
-  position: relative;
-  width: 100vw;
-}
+/* Media Queries */
+
 @media only screen and (max-width: 1200px) {
   .paragraph {
     width: 75%;

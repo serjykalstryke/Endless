@@ -7,7 +7,7 @@ const Steps = () => {
   const [steps, setSteps] = useState([]);
   //useEffect hook is called every time the page is re-rendered, and in this case it is told to only render once so we don't generate an infinite loop
   useEffect(() => {
-    //This section calls the getSteps() function, and then executes a function that uses the above defined functions to set steps in State
+    //This section calls the getSteps() function, and then executes a function that uses the imported sort functions functions to set steps in State
     getSteps().then((steps) => {
       const sortedSteps = sortStepNumber(steps);
       setSteps(mapStepsByDate(sortedSteps));
