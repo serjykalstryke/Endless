@@ -224,7 +224,7 @@ p {
 }
 @media only screen and (max-width: 500px) {
   .heroText {
-    top: 3rem;
+    top: 2rem;
     left: 5rem;
   }
   .hero {
