@@ -13,6 +13,7 @@ View the deployed application <a href = "https://young-lowlands-92384.herokuapp.
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Resources](#resources)
+- [Next Steps (as of 4/10/2022)](#next-steps-as-of-4102022)
 - [Questions](#questions)
 
 ## Installation
@@ -31,6 +32,11 @@ View the deployed application <a href = "https://young-lowlands-92384.herokuapp.
 **Custom REST API** <br>
 **Axios** <br>
 **Google Fonts**
+
+## Next Steps (as of 4/10/2022)
+
+1. Break up Steps component into subcomponents to make the page more readable and modular
+2. Mobile styling needs work. It currently is fine, but I may find a better image for mobile. The given one isn't ideal.
 
 ## Questions
 
