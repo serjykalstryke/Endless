@@ -187,7 +187,7 @@ p {
   }
 
   .hero {
-    height: 40rem;
+    height: 50rem;
   }
 
   h4 {
@@ -223,7 +223,7 @@ p {
   }
 
   .hero {
-    height: 30rem;
+    height: 40rem;
   }
 }
 
@@ -238,7 +238,7 @@ p {
   }
 
   .hero {
-    height: 20rem;
+    height: 30rem;
   }
 
   .logo {
@@ -299,7 +299,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .heroText {
     top: 1rem;
   }
