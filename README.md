@@ -3,7 +3,7 @@
 This was part of a programming challenge to build a landing page for a fictional company. The goal was to build out a project from scratch based on a starting image.
 A REST API was used to generate the "How It Works" section.
 
-## DESKTOP VIEW
+## Desktop View
 
 <img src = "public/desktopView.png" alt="screenshot of endless on desktop">
 
@@ -20,7 +20,7 @@ View the deployed application <a href = "https://young-lowlands-92384.herokuapp.
 ## Table of Contents
 
 - [Endless Comp Project](#endless-comp-project)
-- [DESKTOP VIEW](#desktop-view)
+- [Desktop View](#desktop-view)
 - [Tablet View](#tablet-view)
 - [Mobile View](#mobile-view)
 - [Table of Contents](#table-of-contents)
