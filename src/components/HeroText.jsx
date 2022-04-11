@@ -8,7 +8,7 @@ import "animate.css/animate.min.css";
 
 const HeroText = () => {
   return (
-    <div className="heroText">
+    <main className="heroText">
       <ScrollAnimation
         animateIn="fadeIn"
         animateOnce={true}
@@ -20,16 +20,16 @@ const HeroText = () => {
           <span>Monthly Packages.</span>
           <span>Excitement delivered daily.</span>
         </h1>
-        <div className="paragraph">
+        <section className="paragraph">
           <p>
             What's the best way to shop for the latest video games and
             peripherals? How about never shopping at all? You'll get new stuff
             on your doorstep - every month.
           </p>
-        </div>
+        </section>
         <Button />
       </ScrollAnimation>
-    </div>
+    </main>
   );
 };
 
