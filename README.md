@@ -48,8 +48,7 @@ View the deployed application <a href = "https://young-lowlands-92384.herokuapp.
 
 ## Next Steps (as of 4/10/2022)
 
-1. Break up Steps component into subcomponents to make the page more readable and modular
-2. Mobile styling needs work. It currently is fine, but I may find a better image for mobile. The given one isn't ideal.
+1. implement testing
 
 ## Questions
 
